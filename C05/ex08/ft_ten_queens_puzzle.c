@@ -12,76 +12,84 @@
 
 #include <unistd.h>
 
-void	put_char(char c)
+void	printer(char a)
 {
-	write(1, &c, 1);
+	write(1, &a, 1);
 }
 
-int	ten_queens_test(int table[10], int x, int y)
+int	tester(int board[10], int a, int b)
 {
-	int i;
+	int i3;
 
-	i = 0;
-	while (i < x)
+	i3 = 0;
+	while (i3 < a)
 	{
-		if (y == table[i] || i + table[i] == x + y || i - table[i] == x - y)
-			return (0);
-		i++;
+		if (b == board[i3] || i3 + board[i3] == a + b || i3 - board[i3] == a - b)
+			return (0); // can´t be this possibility (test_number).
+		i3++;
 	}
-	return (1);
+	return (1); //1 = can be this possibility (test_number).
 }
 
-void	ten_queens_recur(int table[10], int *res, int pos)
+void	tq_recursive(int board[10], int *result, int column)
 {
-	int i;
-	int ii;
+	int test_number;
+	int i2;
+	int	a;
+	int	b;
+	int	tester_result;
 
-	if (pos == 10)
+	test_number = 0;
+	i2 = 0;
+	if (column == 10)
 	{
-		*res = *res + 1;
-		ii = 0;
-		while (ii < 10)
+		*result = *result + 1;
+		while (i2 < 10)
 		{
-			put_char(table[ii] + '0');
-			ii++;
+			printer(board[i2] + '0');
+			i2++;
 		}
-		put_char('\n');
+		printer('\n');
 	}
 	else
 	{
-		i = 0;
-		while (i < 10)
+		while (test_number < 10)
 		{
-			if (ten_queens_test(table, pos, i))
+			a = column;
+			b = test_number;
+			tester_result = tester(board, a, b);
+			if (tester_result == 1)
 			{
-				table[pos] = i;
-				ten_queens_recur(table, res, pos + 1);
+				board[column] = test_number;
+				tq_recursive(board, result, column + 1);
 			}
-			i++;
+			test_number++;
 		}
 	}
 }
 
 int	ten_queens(void)
 {
-	int		table[10];
+	int		board[10];
 	int		i;
 	int		result;
+	int	position;
 
 	i = 0;
+	result = 0;
+	position = 0;
 	while (i < 10)
 	{
-		table[i] = -1;
+		board[i] = 0;
 		i++;
 	}
-	result = 0;
-	ten_queens_recur(table, &result, 0);
+	tq_recursive(board, &result, position);
 	return (result);
 }
-
+/*
 #include <stdio.h>
-
-int	main(void)
+int main(void)
 {
-	printf("%d\n", ten_queens());
+	printf("%d.\n", ten_queens());
 }
+*/
