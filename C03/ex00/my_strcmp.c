@@ -1,4 +1,4 @@
-int	ft_strcmp(char *s1, char *s2)
+int	my_strcmp(char *s1, char *s2)
 {
 	int	i;
 
@@ -16,7 +16,7 @@ int main()
 	char	s1[] = "Everything";
 	char	s2[] = "Everyone";
 
-	ft_strcmp(s1, s2);
-	printf("Diference between String1 and String2 is %i.\n",  ft_strcmp(s1, s2));
+	my_strcmp(s1, s2);
+	printf("Diference between String1 and String2 is %i.\n",  my_strcmp(s1, s2));
 }
 */

@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-static size_t	ft_strlen(const char *str)
+static size_t	my_strlen(const char *str)
 {
 	size_t	len;
 
@@ -10,7 +10,7 @@ static size_t	ft_strlen(const char *str)
 	return (len);
 }
 
-static char	*ft_strcpy(char *dest, char *src)
+static char	*my_strcpy(char *dest, char *src)
 {
 	size_t	i;
 
@@ -24,16 +24,16 @@ static char	*ft_strcpy(char *dest, char *src)
 	return (dest);
 }
 
-static char	*ft_strdup(char *s)
+static char	*my_strdup(char *s)
 {
 	char	*new_str;
 	size_t	len;
 
-	len = ft_strlen(s);
+	len = my_strlen(s);
 	new_str = malloc(sizeof(char) * (len + 1));
 	if (new_str == NULL)
 		return (NULL);
-	ft_strcpy(new_str, s);
+	my_strcpy(new_str, s);
 	return (new_str);
 }
 
@@ -46,15 +46,15 @@ static size_t	get_total_length(int size, char **str, char *sep)
 	total_length = 0;
 	while (i < size - 1)
 	{
-		total_length = total_length + ft_strlen(str[i]);
-		total_length = total_length + ft_strlen(sep);
+		total_length = total_length + my_strlen(str[i]);
+		total_length = total_length + my_strlen(sep);
 		i++;
 	}
-	total_length = total_length + ft_strlen(str[i]);
+	total_length = total_length + my_strlen(str[i]);
 	return (total_length);
 }
 
-char	*ft_strjoin(int size, char **strs, char *sep)
+char	*my_strjoin(int size, char **strs, char *sep)
 {
 	int		i;
 	char	*new_str;
@@ -63,7 +63,7 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 
 	i = 0;
 	if (size == 0)
-		return (ft_strdup(""));
+		return (my_strdup(""));
 	total_length = get_total_length(size, strs, sep);
 	new_str = malloc(sizeof(char) * (total_length + 1));
 	if (new_str == NULL)
@@ -71,13 +71,13 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	offset = 0;
 	while (i < size - 1)
 	{
-		ft_strcpy(new_str + offset, strs[i]);
-		offset = offset + ft_strlen(strs[i]);
-		ft_strcpy(new_str + offset, sep);
-		offset = offset + ft_strlen(sep);
+		my_strcpy(new_str + offset, strs[i]);
+		offset = offset + my_strlen(strs[i]);
+		my_strcpy(new_str + offset, sep);
+		offset = offset + my_strlen(sep);
 		i++;
 	}
-	ft_strcpy(new_str + offset, strs[i]);
+	my_strcpy(new_str + offset, strs[i]);
 	return (new_str);
 }
 /*
@@ -87,7 +87,7 @@ int main()
 	char	*strs[] = {"Hello", "world", "how", "are", "you?"};
 	int	size = 5;
 	char	*sep = ", ";
-	char	*concatenated = ft_strjoin(size, strs, sep);
+	char	*concatenated = my_strjoin(size, strs, sep);
 
 	printf("Concatenated strings: %s.\n", concatenated);
 	free (concatenated);

@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-int	ft_atoi(char *str)
+int	my_atoi(char *str)
 {
 	int	i;
 	int	mlt;
@@ -32,6 +32,6 @@ int	ft_atoi(char *str)
 int main(void)
 {
 	char	str[] = "123";
-	printf("String to Int: %i.\n", ft_atoi(str));
+	printf("String to Int: %i.\n", my_atoi(str));
 }
 */

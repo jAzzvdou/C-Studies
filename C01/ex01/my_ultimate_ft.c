@@ -1,4 +1,4 @@
-void	ft_ultimate_ft(int *********nbr)
+void	my_ultimate_ft(int *********nbr)
 {
 	*********nbr = 42;
 }
@@ -27,7 +27,7 @@ int main()
 	nbr8 = &nbr7;
 	nbr  = &nbr8;
 
-	ft_ultimate_ft(nbr);
+	my_ultimate_ft(nbr);
 	printf("%i", num);
 }
 */

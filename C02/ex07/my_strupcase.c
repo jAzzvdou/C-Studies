@@ -1,4 +1,4 @@
-char	*ft_strupcase(char *str)
+char	*my_strupcase(char *str)
 {
 	int	i;
 
@@ -20,7 +20,7 @@ int main()
 	char str[] = "strupcase";
 
 	printf("Before function: %s.\n", str);
-	ft_strupcase(str);
-	printf("After function: %s.\n", ft_strupcase(str));
+	my_strupcase(str);
+	printf("After function: %s.\n", my_strupcase(str));
 }
 */

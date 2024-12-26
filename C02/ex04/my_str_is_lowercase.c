@@ -1,4 +1,4 @@
-int	ft_str_is_lowercase(char *str)
+int	my_str_is_lowercase(char *str)
 {
 	int	i;
 
@@ -18,7 +18,7 @@ int main()
 {
 	char	str[] = "lowercase";
 	
-	ft_str_is_lowercase(str);
-	printf("String: %s.\nType: %i.\n", str, ft_str_is_lowercase(str));
+	my_str_is_lowercase(str);
+	printf("String: %s.\nType: %i.\n", str, my_str_is_lowercase(str));
 }
 */

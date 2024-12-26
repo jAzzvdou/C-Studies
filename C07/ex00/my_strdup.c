@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-char	*ft_strdup(char *src)
+char	*my_strdup(char *src)
 {
 	int		i;
 	int		n;
@@ -31,7 +31,7 @@ int main(void)
 	char	*new_str;
 
 	str = "Duplicate";
-	new_str = ft_strdup(str);
+	new_str = my_strdup(str);
 	printf("%s.\n", new_str);
 }
 */

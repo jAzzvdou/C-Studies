@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-int	ft_ultimate_range(int **range, int min, int max)
+int	my_ultimate_range(int **range, int min, int max)
 {
 	int	size;
 	int	*final;
@@ -37,7 +37,7 @@ int main(void)
 	int	*final;
 	int	ult_range;
 
-	ult_range = ft_ultimate_range(&final, min, max);
+	ult_range = my_ultimate_range(&final, min, max);
 	while (i < ult_range)
 	{
 		printf("%i.\n", final[i]);

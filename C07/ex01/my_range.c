@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-int	*ft_range(int min, int max)
+int	*my_range(int min, int max)
 {
 	int	range;
 	int	*final;
@@ -31,7 +31,7 @@ int main(void)
 	int	*result;
 		
 	s = max - min;
-	result = ft_range(min, max);
+	result = my_range(min, max);
 	while (i < s)
 	{
 		printf("%i.\n", result[i]);

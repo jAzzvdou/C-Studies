@@ -1,4 +1,4 @@
-int	ft_str_is_printable(char *str)
+int	my_str_is_printable(char *str)
 {
 	int	i;
 
@@ -18,7 +18,7 @@ int main()
 {
 	char	str[] = "Pr1nt 4ble$";
 	
-	ft_str_is_printable(str);
-	printf("String: %s.\nType: %i.\n", str, ft_str_is_printable(str));
+	my_str_is_printable(str);
+	printf("String: %s.\nType: %i.\n", str, my_str_is_printable(str));
 }
 */

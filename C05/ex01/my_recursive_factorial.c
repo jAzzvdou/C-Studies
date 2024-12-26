@@ -1,4 +1,4 @@
-int	ft_recursive_factorial(int nb)
+int	my_recursive_factorial(int nb)
 {
 	int	fact;
 
@@ -6,7 +6,7 @@ int	ft_recursive_factorial(int nb)
 		return (1);
 	else if (nb < 0)
 		return (0);
-	fact = nb * ft_recursive_factorial(nb - 1);
+	fact = nb * my_recursive_factorial(nb - 1);
 	return (fact);
 }
 /*
@@ -14,6 +14,6 @@ int	ft_recursive_factorial(int nb)
 int main()
 {
 	int	nb = 0;
-	printf("%i! = %i", nb, ft_recursive_factorial(nb));
+	printf("%i! = %i", nb, my_recursive_factorial(nb));
 }
 */

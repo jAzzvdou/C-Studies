@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void	ft_print_alphabet(void)
+void	my_print_alphabet(void)
 {
 	int	a;
 

@@ -1,4 +1,4 @@
-void	ft_swap(int *a, int *b)
+void	my_swap(int *a, int *b)
 {
 	int	num;
 
@@ -21,7 +21,7 @@ int main()
 	b = &B;
 
 	printf("a = %i e b = %i\n", A, B); 
-	ft_swap(a, b);
+	my_swap(a, b);
 	printf("A = %i e B = %i", A, B);
 }
 */

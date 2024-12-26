@@ -1,11 +1,11 @@
 #include <unistd.h>
 
-void	ft_putchar(char c)
+void	my_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void	ft_print_comb(void)
+void	my_print_comb(void)
 {
 	int	a;
 	int	b;
@@ -20,9 +20,9 @@ void	ft_print_comb(void)
 			c = b + 1;
 			while (c <= 9)
 			{
-				ft_putchar (a + '0');
-				ft_putchar (b + '0');
-				ft_putchar (c + '0');
+				my_putchar (a + '0');
+				my_putchar (b + '0');
+				my_putchar (c + '0');
 				if (a != 7)
 					write(1, ", ", 2);
 				c++;

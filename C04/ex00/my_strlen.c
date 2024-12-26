@@ -1,4 +1,4 @@
-int	ft_strlen(char *str)
+int	my_strlen(char *str)
 {
 	int	i;
 
@@ -14,6 +14,6 @@ int	ft_strlen(char *str)
 int main()
 {
 	char	str[] = "Cake is a lie";
-	printf("%s = %i charaters.\n", str, ft_strlen(str));
+	printf("%s = %i charaters.\n", str, my_strlen(str));
 }
 */

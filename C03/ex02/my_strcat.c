@@ -1,4 +1,4 @@
-char	*ft_strcat(char *dest, char *src)
+char	*my_strcat(char *dest, char *src)
 {
 	int	i;
 	int	n;
@@ -25,7 +25,7 @@ int main()
 	char	dest[100] = "Hello ";
 	char	src[] = "World";
 	
-	ft_strcat(dest, src);
+	my_strcat(dest, src);
 	printf("%s.\n", dest);
 }
 */

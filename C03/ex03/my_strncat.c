@@ -1,4 +1,4 @@
-char	*ft_strncat(char *dest, char *src, unsigned int nb)
+char	*my_strncat(char *dest, char *src, unsigned int nb)
 {
 	unsigned int	count;
 	int				i;
@@ -29,7 +29,7 @@ int main()
 	char	dest[100] = "Hello ";
 	char	src[] = "World";
 
-	ft_strncat(dest, src, nb);
+	my_strncat(dest, src, nb);
 	printf("%s.\n", dest);
 }
 */

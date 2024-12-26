@@ -1,4 +1,4 @@
-int	ft_str_is_uppercase(char *str)
+int	my_str_is_uppercase(char *str)
 {
 	int	i;
 
@@ -18,7 +18,7 @@ int main()
 {
 	char	str[] = "UPPERCASE";
 	
-	ft_str_is_uppercase(str);
-	printf("String: %s.\nType: %i.\n", str, ft_str_is_uppercase(str));
+	my_str_is_uppercase(str);
+	printf("String: %s.\nType: %i.\n", str, my_str_is_uppercase(str));
 }
 */

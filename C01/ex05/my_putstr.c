@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void	ft_putstr(char *str)
+void	my_putstr(char *str)
 {
 	int	i;
 
@@ -18,6 +18,6 @@ int main()
 	char	*str;
 
 	str = "String";
-	ft_putstr(str);
+	my_putstr(str);
 }
 */

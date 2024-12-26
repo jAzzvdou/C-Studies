@@ -1,18 +1,18 @@
 #include <unistd.h>
 
-void	ft_putchar(char c);
+void	my_putchar(char c);
 
 void	print_char(int x, char schar, char mchar, char echar)
 {
-	ft_putchar(schar);
+	my_putchar(schar);
 	while ((x - 1) > 1)
 	{
-		ft_putchar(mchar);
+		my_putchar(mchar);
 		x--;
 	}
 	if (x > 1)
-		ft_putchar(echar);
-	ft_putchar('\n');
+		my_putchar(echar);
+	my_putchar('\n');
 }
 
 void	rush(int x, int y)

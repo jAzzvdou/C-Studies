@@ -1,4 +1,4 @@
-int	ft_strlen(char *str)
+int	my_strlen(char *str)
 {
 	int	i;
 
@@ -16,6 +16,6 @@ int main()
 	char	*str;
 
 	str = "Count this";
-	printf("Count this = %i", ft_strlen(str));
+	printf("Count this = %i", my_strlen(str));
 }
 */

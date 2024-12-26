@@ -1,4 +1,4 @@
-char	*ft_strncpy(char *dest, char *src, unsigned int n)
+char	*my_strncpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int	i;
 
@@ -24,6 +24,6 @@ int main()
 	char	dest[100] = "Nothing";
 
 	printf("Before:\n src = %s\n dest = %s\n", src, dest);
-	printf("After:\n src = %s\n dest = %s\n", src, ft_strncpy(dest, src, n));
+	printf("After:\n src = %s\n dest = %s\n", src, my_strncpy(dest, src, n));
 }
 */

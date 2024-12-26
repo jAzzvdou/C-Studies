@@ -1,4 +1,4 @@
-void	ft_ultimate_div_mod(int *a, int *b)
+void	my_ultimate_div_mod(int *a, int *b)
 {
 	int	div;
 	int	mod;
@@ -22,7 +22,7 @@ int main()
 	a = &num1;
 	b = &num2;
 
-	ft_ultimate_div_mod(a, b);
+	my_ultimate_div_mod(a, b);
 	printf("div = %i e mod = %i", *a, *b);
 }
 */

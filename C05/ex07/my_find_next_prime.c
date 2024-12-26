@@ -1,4 +1,4 @@
-int	ft_is_prime(int nb)
+int	my_is_prime(int nb)
 {
 	int	i;
 
@@ -18,7 +18,7 @@ int	ft_is_prime(int nb)
 	return (1);
 }
 
-int	ft_find_next_prime(int nb)
+int	my_find_next_prime(int nb)
 {
 	int	i;
 
@@ -27,7 +27,7 @@ int	ft_find_next_prime(int nb)
 		return (2);
 	if (nb % 2 == 0)
 		i = i + 1;
-	while (ft_is_prime(i) == 0)
+	while (my_is_prime(i) == 0)
 		i++;
 	return (i);
 }
@@ -36,6 +36,6 @@ int	ft_find_next_prime(int nb)
 int main(void)
 {
 	int	nb = 300;
-	printf("Next prime after %i is %i.\n", nb, ft_find_next_prime(nb));
+	printf("Next prime after %i is %i.\n", nb, my_find_next_prime(nb));
 }
 */

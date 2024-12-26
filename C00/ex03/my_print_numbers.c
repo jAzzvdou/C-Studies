@@ -1,6 +1,6 @@
 #include <unistd.h>
 
-void	ft_print_numbers(void)
+void	my_print_numbers(void)
 {
 	int	num;
 

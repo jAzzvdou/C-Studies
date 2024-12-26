@@ -1,4 +1,4 @@
-void	ft_ft(int *nbr)
+void	my_ft(int *nbr)
 {
 	*nbr = 42;
 }
@@ -10,7 +10,7 @@ int main()
 	int	*nbr;
 	
 	nbr = &num;
-	ft_ft(nbr);
+	my_ft(nbr);
 	printf("%i", num);
 }
 */

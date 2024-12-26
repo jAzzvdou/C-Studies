@@ -1,4 +1,4 @@
-int	ft_fibonacci(int index)
+int	my_fibonacci(int index)
 {
 	int	f;
 
@@ -6,7 +6,7 @@ int	ft_fibonacci(int index)
 		return (-1);
 	if (index < 2)
 		return (index);
-	f = ft_fibonacci(index - 1) + ft_fibonacci(index - 2);
+	f = my_fibonacci(index - 1) + my_fibonacci(index - 2);
 	return (f);
 }
 /*
@@ -15,6 +15,6 @@ int	main(void)
 {
 	int	index = 0;
 	char	str[] = "position of Fibonacci's sequence is";
-	printf("The %ird %s %i.\n", index, str, ft_fibonacci(index));
+	printf("The %ird %s %i.\n", index, str, my_fibonacci(index));
 }
 */

@@ -1,4 +1,4 @@
-int	ft_iterative_factorial(int nb)
+int	my_iterative_factorial(int nb)
 {
 	int	i;
 	int	mult;
@@ -26,6 +26,6 @@ int	ft_iterative_factorial(int nb)
 int main(void)
 {
 	int	nb = 0;
-	printf("%i! = %i", nb, ft_iterative_factorial(nb));
+	printf("%i! = %i", nb, my_iterative_factorial(nb));
 }
 */

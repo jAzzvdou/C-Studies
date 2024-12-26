@@ -1,4 +1,4 @@
-int	ft_sqrt(int nb)
+int	my_sqrt(int nb)
 {
 	long	i;
 	long	n;
@@ -25,6 +25,6 @@ int	ft_sqrt(int nb)
 int main(void)
 {
 	int	nb = 2147483647;
-	printf("squareroot of %i is %i.\n", nb, ft_sqrt(nb));
+	printf("squareroot of %i is %i.\n", nb, my_sqrt(nb));
 }
 */

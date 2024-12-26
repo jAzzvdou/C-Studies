@@ -1,4 +1,4 @@
-char	*ft_strcpy(char *dest, char *src)
+char	*my_strcpy(char *dest, char *src)
 {
 	int	i;
 
@@ -19,7 +19,7 @@ int main()
 	char	dest[11] = "Nothing";
 
 	printf("Before:\n src = %s\n dest = %s\n", src, dest);
-	ft_strcpy(dest, src);
-	printf("After:\n src = %s\n dest = %s\n", src, ft_strcpy(dest, src));
+	my_strcpy(dest, src);
+	printf("After:\n src = %s\n dest = %s\n", src, my_strcpy(dest, src));
 }
 */

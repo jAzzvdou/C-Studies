@@ -1,4 +1,4 @@
-char	*ft_strlowcase(char *str)
+char	*my_strlowcase(char *str)
 {
 	int	i;
 
@@ -20,7 +20,7 @@ int main()
 	char str[] = "STRLOWCASE";
 
 	printf("Before function: %s.\n", str);
-	ft_strlowcase(str);
-	printf("After function: %s.\n", ft_strlowcase(str));
+	my_strlowcase(str);
+	printf("After function: %s.\n", my_strlowcase(str));
 }
 */

@@ -1,4 +1,4 @@
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	my_strncmp(char *s1, char *s2, unsigned int n)
 {
 	unsigned int	i;
 
@@ -21,7 +21,7 @@ int main()
 	char	s1[] = "Everything";
 	char	s2[] = "Everyone";
 
-	ft_strncmp(s1, s2, n);
-	printf("Comparison between String1 and String2: %i.\n", ft_strncmp(s1, s2, n));
+	my_strncmp(s1, s2, n);
+	printf("Comparison between String1 and String2: %i.\n", my_strncmp(s1, s2, n));
 }
 */

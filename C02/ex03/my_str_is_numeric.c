@@ -1,4 +1,4 @@
-int	ft_str_is_numeric(char *str)
+int	my_str_is_numeric(char *str)
 {
 	int	i;
 
@@ -18,7 +18,7 @@ int main()
 {
 	char	str[] = "0123456789";
 	
-	ft_str_is_numeric(str);
-	printf("String: %s.\nType: %i.\n", str, ft_str_is_numeric(str));
+	my_str_is_numeric(str);
+	printf("String: %s.\nType: %i.\n", str, my_str_is_numeric(str));
 }
 */

@@ -1,4 +1,4 @@
-int	ft_is_prime(int nb)
+int	my_is_prime(int nb)
 {
 	int	i;
 
@@ -22,6 +22,6 @@ int	ft_is_prime(int nb)
 int main(void)
 {
 	int	nb = 0;
-	printf("%i is %i.\n", nb, ft_is_prime(nb));
+	printf("%i is %i.\n", nb, my_is_prime(nb));
 }
 */
